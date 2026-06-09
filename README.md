@@ -14,13 +14,14 @@
 
 ```bash
 npm install
-npm run dev -- --port 4173
+npm run dev:public
 ```
 
-访问 `http://localhost:4173/` 查看页面。
+访问 `http://localhost:4173/` 查看页面。注意：`172.30.*` 这类地址通常是容器内网地址，外部浏览器无法直接访问；如果在远程开发环境中预览，请使用平台提供的端口转发/Preview URL 映射到 `4173` 端口。
 
 ## 生产构建
 
 ```bash
 npm run build
+npm run preview:public
 ```
